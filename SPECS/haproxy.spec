@@ -1,7 +1,7 @@
 # https://github.com/ITV/rpm-haproxy
 Summary: HA-Proxy is a TCP/HTTP reverse proxy for high availability environments
 Name: haproxy
-Version: 1.7.2
+Version: 1.7.5
 Release: 1
 License: GPL
 Group: System Environment/Daemons
@@ -86,6 +86,9 @@ fi
 %attr(0755,root,root) %config %{_sysconfdir}/rc.d/init.d/%{name}
 
 %changelog
+* Fri Apr  7 2017 Paul Bramhall <paulwamp@gmail.com>
+- updated to 1.7.5
+
 * Tue Feb  6 2017 Tiago Cruz <tiago.cruz@movile.com>
 - updated to 1.7.2
 - changed to target linux2628 due to cpu-map and USE_CPU_AFFINITY

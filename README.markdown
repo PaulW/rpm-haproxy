@@ -1,4 +1,4 @@
-# A Recipe for a haproxy 1.7.2 stable version RPM on CentOS
+# A Recipe for a haproxy 1.7.5 stable version RPM on CentOS
 
 Perform the following on a build box as a regular user.
 
@@ -16,12 +16,12 @@ Install rpmdevtools from the [EPEL][epel] repository:
 
 ## Download haproxy
 
-    wget http://www.haproxy.org/download/1.6/src/haproxy-1.7.2.tar.gz
-    mv haproxy-1.7.2.tar.gz rpmbuild/SOURCES/
+    wget http://www.haproxy.org/download/1.7/src/haproxy-1.7.5.tar.gz
+    mv haproxy-1.7.5.tar.gz rpmbuild/SOURCES/
 
 ## Get Necessary System-specific Configs
 
-    git clone git@github.com:ITV/rpm-haproxy.git
+    git clone git@github.com:PaulW/rpm-haproxy.git
     cp haproxy-centos/SOURCES/* rpmbuild/SOURCES/
     cp haproxy-centos/SPECS/* rpmbuild/SPECS/
 
